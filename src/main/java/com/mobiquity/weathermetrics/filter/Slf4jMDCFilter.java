@@ -50,8 +50,9 @@ public class Slf4jMDCFilter extends OncePerRequestFilter {
             }
             chain.doFilter(request, response);
         } finally {
-            MDC.remove(mdcTokenKey);
-            MDC.remove(mdcClientIpKey);
+            //MDC.remove(mdcTokenKey);
+            //MDC.remove(mdcClientIpKey);
+            MDC.clear();
         }
     }
 

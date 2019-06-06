@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "weather.slf4jfilter")
+//@ConfigurationProperties(prefix = "weather.slf4jfilter")
 public class Slf4jMDCFilterConfiguration {
 
     public static final String DEFAULT_RESPONSE_TOKEN_HEADER = "Response_Token";
